@@ -1,0 +1,59 @@
+using System;
+using System.Windows.Forms;
+using System.IO;
+
+public class CreateDirectoryForm : Form
+{
+    private TextBox textBox;
+    private Button submitButton;
+
+    public CreateDirectoryForm()
+    {
+        Text = "Créateur de dossiers";
+
+        // Créer un TextBox pour saisir le nom du dossier
+        textBox = new TextBox { Location = new System.Drawing.Point(15, 15), Width = 250 };
+        this.Controls.Add(textBox);
+
+        // Créer un bouton de soumission
+        submitButton = new Button { Text = "Créer", Location = new System.Drawing.Point(275, 15), Width = 100 };
+        submitButton.Click += new EventHandler(this.submitButton_Click);
+        this.Controls.Add(submitButton);
+    }
+
+    private void submitButton_Click(object sender, EventArgs e)
+    {
+        string path = textBox.Text;
+
+        if (!Directory.Exists(path))
+        {
+            // Créer le dossier
+            Directory.CreateDirectory(path);
+
+            // Créer index.html
+            File.WriteAllText(Path.Combine(path, "index.html"), "<!DOCTYPE html>\n<html>\n</html>");
+
+            // Créer le dossier style et le fichier style.css
+            Directory.CreateDirectory(Path.Combine(path, "style"));
+            File.WriteAllText(Path.Combine(path, "style", "style.css"), "/* CSS goes here */");
+
+            // Créer le dossier script et le fichier script.js
+            Directory.CreateDirectory(Path.Combine(path, "script"));
+            File.WriteAllText(Path.Combine(path, "script", "script.js"), "// JavaScript goes here");
+
+            MessageBox.Show("Dossier créé avec succès!", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        else
+        {
+            MessageBox.Show("Le dossier existe déjà!", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+    }
+
+    [STAThread]
+    static void Main()
+    {
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new CreateDirectoryForm());
+    }
+}

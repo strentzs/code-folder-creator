@@ -1,0 +1,15 @@
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\bin\Debug\net7.0-windows\MyProject.exe
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\bin\Debug\net7.0-windows\MyProject.deps.json
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\bin\Debug\net7.0-windows\MyProject.runtimeconfig.json
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\bin\Debug\net7.0-windows\MyProject.dll
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\bin\Debug\net7.0-windows\MyProject.pdb
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\obj\Debug\net7.0-windows\MyProject.csproj.AssemblyReference.cache
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\obj\Debug\net7.0-windows\MyProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\obj\Debug\net7.0-windows\MyProject.AssemblyInfoInputs.cache
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\obj\Debug\net7.0-windows\MyProject.AssemblyInfo.cs
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\obj\Debug\net7.0-windows\MyProject.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\obj\Debug\net7.0-windows\MyProject.dll
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\obj\Debug\net7.0-windows\refint\MyProject.dll
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\obj\Debug\net7.0-windows\MyProject.pdb
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\obj\Debug\net7.0-windows\MyProject.genruntimeconfig.cache
+C:\xampp\htdocs\test-c#\test-c#-2\MyProject\obj\Debug\net7.0-windows\ref\MyProject.dll
